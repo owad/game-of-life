@@ -1,5 +1,7 @@
 # Game of life
 
+![screenshot](https://raw.githubusercontent.com/owad/game-of-life/master/game-of-life.png) 
+
 Rules explained here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 Some extra things you can do:
@@ -16,8 +18,6 @@ You can also prepare your own board init states by:
 * print the current state (P)
 * copy the printed state from the terminal and paste to the TEMPLATES dictionary in the  [templates.py](https://github.com/owad/game-of-life/blob/master/templates.py) file
 * restart the game (Q)
-
-![screenshot](https://raw.githubusercontent.com/owad/game-of-life/master/game-of-life.png) 
 
 ## Requirements:
 * pygame
