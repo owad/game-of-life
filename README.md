@@ -23,4 +23,4 @@ You can also prepare your own board init states by:
 * pygame
 
 ## How to run
-Run ``python gameoflife.py`` comamcnd from the project's root.
+Run ``python gameoflife.py`` command from the project's root.
