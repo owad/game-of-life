@@ -50,8 +50,10 @@ def draw_help():
     label = font.render("R - restart, C - clear, P - print current state", 1, (200, 0, 0), BLACK)
     screen.blit(label, (10, 30))
 
-
-    label = font.render("Templates: 1 - Glider Gun", 1, (200, 0, 0), BLACK)
+    tpls_text = ", ".join([
+        "%d - %s" % (key, value[0]) for key, value in TEMPLATES.items() 
+    ])
+    label = font.render("Templates: %s" % tpls_text, 1, (200, 0, 0), BLACK)
     screen.blit(label, (10, HEIGHT - 30))
 
 
@@ -124,8 +126,13 @@ def run():
                     generate_board()
                 if event.key == pygame.K_c:
                     generate_board(True)
-                if event.key == pygame.K_1:
-                    generate_board(True, TEMPLATES[1])
+                if event.key > 48 and event.key < 58:
+                    idx = int(chr(event.key))
+                    if idx in TEMPLATES:
+                        generate_board(
+                            True,
+                            TEMPLATES.get(idx),
+                        )
                 if event.key == pygame.K_q:
                     sys.exit()
 

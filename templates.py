@@ -52,5 +52,7 @@ GLIDER = [
 GLIDER = {key: WHITE for key in GLIDER}
 
 TEMPLATES = {
-    1: GLIDER,
+    1: ('Glider Gun', GLIDER),
+    # 2: ('template name', LIVE_CELLS_LIST),  # EXAMPLE
+    # ...
 }
