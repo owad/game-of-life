@@ -2,8 +2,6 @@
 
 Rules explained here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
-Here's the [screenshot](https://raw.githubusercontent.com/owad/game-of-life/master/game-of-life.png) 
-
 Some extra things you can do:
 
 * S - start/stop the cycle
@@ -17,3 +15,5 @@ You can also prepare your own board init states by:
 * marking live cells by clicking on the board
 * printing the current state (P)
 * copy/pating the printed state from the terminal to the templates.py TEMPLATES dict under 1 to 9 key
+
+![screenshot](https://raw.githubusercontent.com/owad/game-of-life/master/game-of-life.png) 
