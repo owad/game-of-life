@@ -51,7 +51,7 @@ def draw_help():
     screen.blit(label, (10, 30))
 
     tpls_text = ", ".join([
-        "%d - %s" % (key, value[0]) for key, value in TEMPLATES.items() 
+        "%d - %s" % (key, value[0]) for key, value in TEMPLATES.items()
     ])
     label = font.render("Templates: %s" % tpls_text, 1, (200, 0, 0), BLACK)
     screen.blit(label, (10, HEIGHT - 30))
@@ -131,7 +131,7 @@ def run():
                     if idx in TEMPLATES:
                         generate_board(
                             True,
-                            TEMPLATES.get(idx),
+                            TEMPLATES.get(idx)[1],
                         )
                 if event.key == pygame.K_q:
                     sys.exit()
