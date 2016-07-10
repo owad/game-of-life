@@ -2,6 +2,8 @@
 
 Rules explained here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
+Here's the [screenshot](https://raw.githubusercontent.com/owad/game-of-life/master/game-of-life.png) 
+
 Some extra things you can do:
 
 * S - start/stop the cycle
